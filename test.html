@@ -1,0 +1,153 @@
+    <div class="container row">
+      <!-- Public first column  -->
+      <div class="col-sm-12 col-md-4 col-lg-4 portfolio_first_col">
+        <!-- header container  -->
+        <div class="row green-container mt-3">
+          <p class="text-center text-uppercase">User</p>
+          <p class="text-center">Total active User</p>
+        </div>
+
+        <p class="portfolio-tagline"><b><i>Invite Public to my organisation</i></b></p>
+        <form>
+          <div class="mb-3">
+            <label for="publicName" class="form-label">Public Name<span class="red_asterisk">*</span></label>
+            <input type="text" class="form-control" id="publicName" placeholder="Member name">
+          </div>
+          <div class="mb-3">
+            <label for="publicCode" class="form-label">Public Code (Unique)<span class="red_asterisk">*</span></label>
+            <input type="text" class="form-control" id="publicCode" placeholder="Member code">
+          </div>
+          <div class="mb-3">
+            <label for="publicSpec" class="form-label">Public Specification</label>
+            <input type="text" class="form-control" id="publicSpec" placeholder="Member Specification">
+          </div>
+          <div class="mb-3">
+            <label for="memeberunicode" class="form-label">Public Universal Code</label>
+            <input type="text" class="form-control" id="memeberunicode" placeholder="Member universal code">
+          </div>
+          <div class="mb-3">
+            <label for="memberdetails" class="form-label">Public Details</label>
+            <textarea type="text" class="form-control" id="memberdetails" rows="3" placeholder="Member details"></textarea>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Create Public Invitation Link</button>
+          </div>
+        </form>
+        <div class="row light-green-container mt-3">
+          <p class="text-center">Public Invitation Link</p>
+        </div>
+        <form>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Copy Invitation Link</button>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email of invitee">
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Send Invitation Link in Email</button>
+          </div>
+        </form>
+      </div>
+      <!-- Public second column  -->
+      <div class="col-sm-12 col-md-4 col-lg-4 portfolio_first_col bg-white">
+           
+        <p class="portfolio-tagline"><b><i>Search User in my organisation</i></b></p>
+        <form>
+          <div class="mb-3">
+            <label for="member" class="form-label">User not having Portfolio<span class="red_asterisk">*</span></label>
+            <select class="form-select" id="member"  multiple aria-label="multiple select example">
+              <option selected>Member 01</option>
+              <option value="1">Member 02</option>
+              <option value="2">Member 03</option>
+              <option value="3">Member 04</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="member" class="form-label">User having assigned Portfolio<span class="red_asterisk">*</span></label>
+            <select class="form-select" id="member"  multiple aria-label="multiple select example">
+              <option selected>Member 01</option>
+              <option value="1">Member 02</option>
+              <option value="2">Member 03</option>
+              <option value="3">Member 04</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+         
+          <div class="mb-3">
+            <label for="searchTeam" class="form-label">Search User<span class="red_asterisk">*</span></label>
+            <input type="text" class="form-control" id="searchTeam" placeholder="Name">
+          </div>
+         <div class="mb-3">
+            <label for="teamMemeberDetails" class="form-label">Details of selected User</label>
+            <textarea type="text" class="form-control" id="teamMemeberDetails" rows="3" placeholder="<portfolio name, code, spec, universal code, details> <member name, code, spec, universal code, details> <member type> <data type> <operational rights>  <role Name, code, spec, universal code, details> <(level 1 name,Item name), (level 2 name,Item name), (level 3 name,Item name), (level 4 name,Item name), (level 5 name,Item name)> <layer #>"></textarea>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Remove Selected Team Memeber</button>
+          </div>
+        </form>
+      </div>
+      <!-- Public third column  -->
+      <div class="col-sm-12 col-md-4 col-lg-4 portfolio_first_col">
+       <form>
+          <div class="mb-3 mt-5">
+            <label for="Invitedmember" class="form-label">Invited User</label>
+            <select class="form-select" id="Invitedmember" multiple aria-label="multiple select example">
+              <option selected>Member 01</option>
+              <option value="1">Member 02</option>
+              <option value="2">Member 03</option>
+              <option value="3">Member 04</option>
+              <option value="5">Member 05</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="SearchInvitedMember" class="form-label">Search Invited User</label>
+            <input type="text" class="form-control" id="SearchInvitedMember" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <label for="InvitedMembersDetails" class="form-label">Details of Invited User</label>
+            <textarea type="text" class="form-control" id="InvitedMembersDetails" rows="3" placeholder="<portfolio name, code, spec, universal code, details> <member name, code, spec, universal code, details> <member type> <data type> <operational rights>  <role Name, code, spec, universal code, details> <(level 1 name,Item name), (level 2 name,Item name), (level 3 name,Item name), (level 4 name,Item name), (level 5 name,Item name)> <layer #>"></textarea>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Cancel selected Public invitation</button>
+            <button class="btn product-btn" type="button">Duplicate selected Member invitation to create new</button>
+          </div>
+        </form>
+        <hr class="red_hr"/>
+        <p class="portfolio-tagline"><b><i>Common Invitation to join as Public to my organisation</i></b></p>
+        <form>
+          <div class="mb-3">
+            <label for="linkData" class="form-label">Link to Data</label>
+            <textarea type="text" class="form-control bg-white" id="linkData" rows="3" placeholder="Paste link to database to connect"></textarea>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Import User</button>
+          </div>
+          <div class="mb-3">
+            <label for="InvitationLink" class="form-label">Common invitation link</label>
+            <textarea type="text" class="form-control bg-white" id="InvitationLink" rows="3" placeholder="Paste invitation link"></textarea>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Save common invitation link & create QR code</button>
+          </div>
+          <img src="./images/qrcode.webp" class="rounded img-thumbnail mx-auto d-block" alt="...">
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn product-btn" type="button">Download common invitation link QR code</button>
+          </div>
+        </form>
+      </div>
+    </div>

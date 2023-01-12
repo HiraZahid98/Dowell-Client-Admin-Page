@@ -1,0 +1,4200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dowell Home</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+      <!-- header  -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid p-5">
+          <a class="navbar-brand" href="#">
+            <img src="./images/cropped-logo-1.webp"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#">Plans & Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#">Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#"><i class="bi bi-cart-fill"></i> $0.00 <p class="text-muted d-inline">0 items</p></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <i class="bi bi-instagram bi-navigation"></i>
+                <i class="bi bi-twitter bi-navigation"></i>
+                <i class="bi bi-facebook bi-navigation"></i>
+                <i class="bi bi-linkedin bi-navigation"></i>
+                <i class="bi bi-youtube bi-navigation"></i>
+                <i class="bi bi-google bi-navigation"></i>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- header end  -->
+    <!-- top container  -->
+
+    <div class="container text-center">
+      <div class="row mt-5">
+        <!-- image column  -->
+        <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 profile-image-col">
+          <img
+            src="./images/profile.webp"
+            class="img-thumbnail"
+            alt="profile Image"
+          />
+        </div>
+
+        <!-- information column  -->
+        <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 profile-info-col">
+          <div class="row">
+            <h5>
+              <small class="text-muted name-text"
+                >Hi [First Name] [Last Name], [Designation]</small
+              >
+            </h5>
+          </div>
+          <div class="row">
+            <p>
+              <b class="danger-text">Session starts at [time], [Location]</b>
+            </p>
+          </div>
+          <div class="row buttonrow">
+            <div
+              class="col-lg-4 col-md-12 col-sm-12 col-xs-12"
+              id="settings-btn"
+            >
+              <button type="button" class="btn srl-btn">
+                <b
+                  ><i class="bi bi-arrow-left-circle icon-style"></i>Settings</b
+                >
+              </button>
+            </div>
+            <div
+              class="col-lg-4 col-md-12 col-sm-12 col-xs-12"
+              id="refresh-btn"
+            >
+              <button type="button" class="btn srl-btn">
+                <b><i class="bi bi-arrow-clockwise icon-style"></i>Refresh</b>
+              </button>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="logout-btn">
+              <button type="button" class="btn success-btn">
+                <b><i class="bi bi-arrow-clockwise icon-style"></i>Logout</b>
+              </button>
+            </div>
+          </div>
+          <div class="row organizationRow mt-5">
+            <select
+              class="form-select org-select-input"
+              aria-label="Default select example"
+            >
+              <option selected>Organisation 1</option>
+              <option value="1">Organisation 2</option>
+              <option value="2">Organisation 3</option>
+              <option value="3">Organisation 4</option>
+              <option value="3">My Organisation</option>
+            </select>
+            <button
+              type="button"
+              class="btn show-org mt-2"
+              onclick="showOrgDetails()"
+            >
+              <b>Show Organisations details</b>
+            </button>
+
+            <div class="row mt-3">
+              <h4 id="showDetails"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top container end  -->
+
+    <!-- second container  -->
+    <div class="container">
+      <div class="row sidebarRow">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 left-column">
+          <!-- notification row  -->
+          <div class="row">
+            <div
+              class="card sidebar-card ms-auto me-auto mt-4"
+              style="width: 20rem"
+            >
+              <div class="card-body">
+                <h5 class="card-title sidebar-heading">Notifications</h5>
+                <!-- notifications   -->
+                <div class="wrapper">
+                  <div class="menu" id="menu">
+                    <a><i class="bi bi-caret-right-fill"></i> Team Member chat(098)</a>
+                  </div>
+                </div>
+                <ol class="list" id="ddl">
+                  <li>Member 1</li>
+                  <li>Member 2</li>
+                  <li>Member 3</li>
+                </ol>
+
+                <!-- guest chat  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-chat">
+                    <a><i class="bi bi-caret-right-fill"></i> Guest Chat (09)</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-chat">
+                  <li>Guest 1</li>
+                  <li>Guest 2</li>
+                  <li>Guest 3</li>
+                  <li>Guest 4</li>
+                </ol>
+                <!-- public chat  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-public">
+                    <a
+                      ><i class="bi bi-caret-right-fill"></i> Public Chat
+                      (0045)</a
+                    >
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-public">
+                  <li>Public 1</li>
+                  <li>Public 2</li>
+                  <li>Public 3</li>
+                  <li>Public 4</li>
+                </ol>
+                <!-- ux living lab chat  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-ux">
+                    <a
+                      ><i class="bi bi-caret-right-fill"></i> UX Living Lab
+                      Chat</a
+                    >
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-ux">
+                  <li>Product 1</li>
+                  <li>Product 2</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- announcements row  -->
+          <div class="row">
+            <div
+              class="card sidebar-card ms-auto me-auto mt-4"
+              style="width: 20rem"
+            >
+              <div class="card-body">
+                <h5 class="card-title sidebar-heading">Announcements</h5>
+                <!-- announcement   -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-announce">
+                    <a
+                      ><i class="bi bi-caret-right-fill"></i> To Team Members</a
+                    >
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-announce">
+                  <li>Announcement 1</li>
+                  <li>Announcement 2</li>
+                  <li>Announcement 3</li>
+                </ol>
+                <!-- guest announcement  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-guest">
+                    <a><i class="bi bi-caret-right-fill"></i> To Guest</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-guest">
+                  <li>Announcement 1</li>
+                  <li>Announcement 2</li>
+                  <li>Announcement 3</li>
+                </ol>
+                <!-- public announcement  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-public-announce">
+                    <a><i class="bi bi-caret-right-fill"></i> To Public</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-public-announce">
+                  <li>Announcement 1</li>
+                  <li>Announcement 2</li>
+                  <li>Announcement 3</li>
+                </ol>
+                <!-- ux living lab announcement  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-ux-announce">
+                    <a
+                      ><i class="bi bi-caret-right-fill"></i> From UX Living
+                      Lab</a
+                    >
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-ux-announce">
+                      <li>Announcement 1</li>
+                      <li>Announcement 2</li>
+                      <li>Announcement 3</li>
+                    </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Profile row  -->
+          <div class="row">
+            <div
+              class="card sidebar-card ms-auto me-auto mt-4"
+              style="width: 20rem"
+            >
+              <div class="card-body">
+                <h5 class="card-title sidebar-heading">My Profile</h5>
+                <!-- organisations   -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-organisation">
+                    <a><i class="bi bi-caret-right-fill"></i> Organisations</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-organisation">
+                  <li>
+                    Organisation 1 [Owner]
+                    <ol>
+                      <li>
+                        Product 1
+                        <span class="orange-text"
+                          >[Data type, Operational rights]</span
+                        >
+                        <ol>
+                          <li>Portfolio 1</li>
+                          <li>Portfolio 2</li>
+                        </ol>
+                      </li>
+
+                      <li>
+                        Product 2
+                        <span class="orange-text"
+                          >[Data type,<br />
+                          Operational rights]</span
+                        >
+                        <ol>
+                          <li>Portfolio 1</li>
+                          <li>Portfolio 2</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+                <!-- edit profile  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-edit-profile">
+                    <a><i class="bi bi-caret-right-fill"></i> Edit Profile</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-edit-profile">
+                  <li>Photo</li>
+                  <li>Personal Details</li>
+                  <li>Photo</li>
+                </ol>
+                <!-- last logins   -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-lastLogins">
+                    <a><i class="bi bi-caret-right-fill"></i> Last Logins</a>
+                   
+                  </div>
+                </div>
+                <ol class="list" id="ddl-lastLogins">
+                  <li>
+                    Login 1 details
+                    <ol>
+                      <li>Time</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Login 2 details
+                    <ol>
+                      <li>Time</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Login 3 details
+                    <ol>
+                      <li>Time</li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- organisations row  -->
+          <div class="row">
+            <div
+              class="card sidebar-card ms-auto me-auto mt-4"
+              style="width: 20rem"
+            >
+              <div class="card-body">
+                <h5 class="card-title sidebar-heading">My Profile</h5>
+                <!-- products   -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-products">
+                    <a><i class="bi bi-caret-right-fill"></i> Products (007)</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-products">
+                  <li>Workflow AI</li>
+                  <li>Wifi QR Code</li>
+                  <li>Digital Q</li>
+                </ol>
+                <!-- members  -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-members">
+                    <a
+                      ><i class="bi bi-caret-right-fill"></i> Members (00025)</a
+                    >
+                   
+                  </div>
+                </div>
+                <ol class="list" id="ddl-members">
+                  <li>Team Member 1 [Active/ Live/ Disabled]</li>
+                  <li>Team Member 2 [Active/ Live/ Disabled]</li>
+                  <li>Team Member 3 [Active/ Live/ Disabled]</li>
+                  <li>Team Member 4 [Active/ Live/ Disabled]</li>
+                </ol>
+                <!-- guests 0000235   -->
+                <div class="wrapper">
+                  <div class="menu" id="menu-guest00">
+                    <a
+                      ><i class="bi bi-caret-right-fill"></i> Guests
+                      (0000235)</a
+                    >
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddl-guest00">
+                  <p><b>Search Guests</b></p>
+                  <li>Guest 1 [Active/ Live/ Disabled]</li>
+                  <li>Guest 2 [Active/ Live/ Disabled]</li>
+                  <li>Guest 3 [Active/ Live/ Disabled]</li>
+                  <li>Guest 4 [Active/ Live/ Disabled]</li>
+                </ol>
+                <!-- public 009   -->
+                <div class="wrapper">
+                  <div class="menu" id="menupublicorg">
+                    <a><i class="bi bi-caret-right-fill"></i> Public (009)</a>
+                    
+                  </div>
+                </div>
+                <ol class="list" id="ddlpublicorg">
+                  <p>Active Public IDs</p>
+                  <li>QR code ID 1</li>
+                  <li>QR code ID 2</li>
+                  <li>QR code ID 3</li>
+                  <li>QR code ID 4</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- left container end  -->
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 tabsrow">
+          <!-- tab navs  -->
+          <div class="row">
+            <div class="nav-row ms-auto">
+              <ul
+                class="col-12 nav nav-pills mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" id="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-products-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-products"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-products"
+                    aria-selected="true"
+                  >
+                    <b><i class="bi bi-gem"></i> Products</b>
+                  </button>
+                </li>
+                <li class="nav-item" id="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-rights-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-rights"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-rights"
+                    aria-selected="false"
+                  >
+                    <b><i class="bi bi-gear-fill"></i> Rights</b>
+                  </button>
+                </li>
+                <li class="nav-item" id="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-members-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-members"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-members"
+                    aria-selected="false"
+                  >
+                    <b><i class="bi bi-people-fill"></i> Members</b>
+                  </button>
+                </li>
+                <li class="nav-item" id="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-roles-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-roles"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-roles"
+                    aria-selected="false"
+                  >
+                    <b><i class="bi bi-diagram-3-fill"></i> Roles</b>
+                  </button>
+                </li>
+                <li class="nav-item" id="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-levelsMain-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-levelsMain"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-levelsMain"
+                    aria-selected="false"
+                  >
+                    <b><i class="bi bi-person-fill"></i> Levels</b>
+                  </button>
+                </li>
+                <li class="nav-item" id="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-layersMain-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-layersMain"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-layersMain"
+                    aria-selected="false"
+                  >
+                    <b><i class="bi bi-border-width"></i> Layers</b>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- tab navs end -->
+
+          <!-- tab content  -->
+          <div class="row">
+            <div class="tab-content maintabContent" id="pills-tabContent">
+              <!-- product tab content  -->
+              <div
+                class="tab-pane h-100 fade show active"
+                id="pills-products"
+                role="tabpanel"
+                aria-labelledby="pills-products-tab"
+                tabindex="0"
+              >
+                <div class="row">
+                  <div class="col-12">
+                    <h3>
+                      <p>Products of Selected Organisation [Owner Name]</p>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card aicard">
+                  <div class="row">
+                    <div
+                      class="nav col-lg-4 col-sm-12 col-md-12 col-xs-12 nav-pills"
+                      id="v-pills-tab"
+                      role="tablist"
+                      aria-orientation="vertical"
+                      style="padding: 21px !important;"
+                    >
+                      <button
+                        class="nav-link active products-nested-nav"
+                        id="v-pills-workflowAi-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-workflowAi"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-workflowAi"
+                        aria-selected="true"
+                      >
+                        <b><i class="bi bi-people-fill"></i> Workflow AI</b>
+                      </button>
+                      <button
+                        class="nav-link products-nested-nav"
+                        id="v-pills-digitalq-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-digitalq"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-digitalq"
+                        aria-selected="false"
+                      >
+                        <b><i class="bi bi-people-fill"></i> Digital Q</b>
+                      </button>
+                      <button
+                        class="nav-link products-nested-nav"
+                        id="v-pills-wifiCode-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-wifiCode"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-wifiCode"
+                        aria-selected="false"
+                      >
+                        <b><i class="bi bi-people-fill"></i> Wifi QR code</b>
+                      </button>
+                      <button
+                        class="nav-link products-nested-nav"
+                        id="v-pills-chat-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-chat"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-chat"
+                        aria-selected="false"
+                      >
+                        <b><i class="bi bi-people-fill"></i> Chat</b>
+                      </button>
+                    </div>
+
+                    <div
+                      class="col-lg-6 col-sm-12 col-md-12 col-xs-12 tab-content"
+                      id="v-pills-tabContent"
+                    >
+                      <div
+                        class="tab-pane fade show active"
+                        id="v-pills-workflowAi"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-workflowAi-tab"
+                        tabindex="0"
+                      >
+                        <div class="row">
+                          <img src="./images/ai.webp" />
+                          <ul class="products-nested-list">
+                            <li>[Data Type]</li>
+                            <li>[Operational Rights]</li>
+                            <li class="green-text">Select Portfolio</li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 1
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 2
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 3
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 4
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 5
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 6
+                            </li>
+                            <li>
+                              <a href="#" class="danger-link">Click Here</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-digitalq"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-digitalq-tab"
+                        tabindex="0"
+                      >
+                        <img src="./images/iq.webp" />
+                        <ul class="products-nested-list">
+                          <li>[Data Type]</li>
+                          <li>[Operational Rights]</li>
+                          <li class="green-text">Select Portfolio</li>
+                          <li>
+                            <input type="radio" name="airadio" /> Portfolio 1
+                          </li>
+                          <li>
+                            <input type="radio" name="airadio" /> Portfolio 2
+                          </li>
+                          <li>
+                            <input type="radio" name="airadio" /> Portfolio 3
+                          </li>
+                          <li>
+                            <input type="radio" name="airadio" /> Portfolio 4
+                          </li>
+                          <li>
+                            <input type="radio" name="airadio" /> Portfolio 5
+                          </li>
+                          <li>
+                            <input type="radio" name="airadio" /> Portfolio 6
+                          </li>
+                          <li>
+                            <a href="#" class="danger-link">Click Here</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-wifiCode"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-wifiCode-tab"
+                        tabindex="0"
+                      >
+                        <div class="row">
+                          <img src="./images/qrcode.webp" />
+                        </div>
+                        <div class="row">
+                          <ul class="products-nested-list">
+                            <li>[Data Type]</li>
+                            <li>[Operational Rights]</li>
+                            <li class="green-text">Select Portfolio</li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 1
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 2
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 3
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 4
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 5
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 6
+                            </li>
+                            <li>
+                              <a href="#" class="danger-link">Click Here</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-chat"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-chat-tab"
+                        tabindex="0"
+                      >
+                        <div class="row">
+                          <img src="./images/chat.webp" />
+                        </div>
+                        <div class="row">
+                          <ul class="products-nested-list">
+                            <li>[Data Type]</li>
+                            <li>[Operational Rights]</li>
+                            <li class="green-text">Select Portfolio</li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 1
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 2
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 3
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 4
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 5
+                            </li>
+                            <li>
+                              <input type="radio" name="airadio" /> Portfolio 6
+                            </li>
+                            <li>
+                              <a href="#" class="danger-link">Click Here</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- rights tab content  -->
+              <div
+                class="tab-pane h-100 fade"
+                id="pills-rights"
+                role="tabpanel"
+                aria-labelledby="pills-rights-tab"
+                tabindex="0"
+              >
+                <div class="row ms-auto me-auto">
+                  <div class="col-12">
+                    <h3><p>Operational rights of my Organisation</p></h3>
+                  </div>
+                </div>
+                <div class="row rights-second-row h-900">
+                  <div class="col-lg-5 p-4 col-md-12 col-sm-12 rights-side-bar">
+                    <div class="row">
+                      <h5>Select</h5>
+                    </div>
+                    <div class="row mt-2">
+                      <p class="mb-0"><b>Select Team Member</b></p>
+                    </div>
+                    <div class="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="teammemeber"
+                          id="exampleRadios1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Team Member
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="teammemeber"
+                          id="exampleRadios2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2">
+                          Guest
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="teammemeber"
+                          id="exampleRadios3"
+                          value="option3"
+                        />
+                        <label class="form-check-label" for="exampleRadios3">
+                          Public
+                        </label>
+                      </div>
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Select Member</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Name 1</option>
+                          <option value="1">Name 2</option>
+                          <option value="2">Name 3</option>
+                        </select>
+                      </div>
+
+                      <!-- select portfolio  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Select from My Products</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="products"
+                        >
+                          <option selected>Workflow AI</option>
+                          <option value="1">Digital Q</option>
+                          <option value="2">Wifi QR Code</option>
+                        </select>
+                      </div>
+
+                      <!-- select data type  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Select Data Type</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="data type"
+                        >
+                          <option selected>Real Data 1</option>
+                          <option value="1">Testing Data</option>
+                          <option value="2">Learning Data</option>
+                          <option value="3">Archived Data</option>
+                        </select>
+                      </div>
+
+                      <!-- select operation rights  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Select Operational Rights</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>View</option>
+                          <option value="1">Add/Edit</option>
+                          <option value="2">Delete</option>
+                          <option value="3">Admin</option>
+                        </select>
+                      </div>
+
+                      <!-- roles  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Roles</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Roles 1</option>
+                          <option value="1">Roles 2</option>
+                          <option value="2">Roles 3</option>
+                        </select>
+                      </div>
+
+                      <!-- portfolio name  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Portfolio Name</b></p>
+                      </div>
+                      <div class="row">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter a unique name"
+                          aria-label="portfolio name"
+                        />
+                      </div>
+
+                      <!-- cretae portfolio button  -->
+                      <div class="row mt-2">
+                        <button type="button" class="btn success-btn">
+                          <b>Create Portfolio</b>
+                        </button>
+                      </div>
+                      <!-- end button  -->
+                    </div>
+                  </div>
+
+                  <!-- Products, Data Types, Rights Assigned container  -->
+                  <div class="col-lg-7 p-4 pdra col-md-12 col-sm-12">
+                    <div class="row">
+                      <h5 class="pdra-text">
+                        <b>Products, Data Types, Rights Assigned</b>
+                      </h5>
+                    </div>
+                    <div class="row">
+                      <ul
+                        class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist"
+                      >
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link datatypesnaves active"
+                            id="pills-realData-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-realData"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-realData"
+                            aria-selected="true"
+                          >
+                            <b><i class="bi bi-speedometer"></i> Real Data</b>
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link datatypesnaves"
+                            id="pills-testingdata-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-testingdata"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-testingdata"
+                            aria-selected="false"
+                          >
+                            <b><i class="bi bi-house-fill"></i> Testing Data</b>
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link datatypesnaves"
+                            id="pills-learningData-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-learningData"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-learningData"
+                            aria-selected="false"
+                          >
+                            <b
+                              ><i class="bi bi-people-fill"></i> Learning
+                              Data</b
+                            >
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link datatypesnaves"
+                            id="pills-archivedData-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-archivedData"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-archivedData"
+                            aria-selected="false"
+                            disabled
+                          >
+                            <b
+                              ><i class="bi bi-shop-window"></i> Archived
+                              Data</b
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <!-- real data tab  -->
+                        <div
+                          class="tab-pane fade show active"
+                          id="pills-realData"
+                          role="tabpanel"
+                          aria-labelledby="pills-realData-tab"
+                          tabindex="0"
+                        >
+                          <h5>[Select Product]</h5>
+                          <h3>[Select Role]</h3>
+                          <ol>
+                            <li>
+                              Team Memeber
+                              <ol>
+                                <li>
+                                  Member 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Member 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Guest
+                              <ol>
+                                <li>
+                                  Guest 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Guest 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Public
+                              <ol>
+                                <li>
+                                  Public 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Public 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </div>
+                        <!-- testing data  -->
+                        <div
+                          class="tab-pane fade"
+                          id="pills-testingdata"
+                          role="tabpanel"
+                          aria-labelledby="pills-testingdata-tab"
+                          tabindex="0"
+                        >
+                          <h5>[Select Product]</h5>
+                          <h3>[Select Role]</h3>
+                          <ol>
+                            <li>
+                              Team Memeber
+                              <ol>
+                                <li>
+                                  Member 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Member 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Guest
+                              <ol>
+                                <li>
+                                  Guest 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Guest 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Public
+                              <ol>
+                                <li>
+                                  Public 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Public 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </div>
+                        <!-- learning data  -->
+                        <div
+                          class="tab-pane fade"
+                          id="pills-learningData"
+                          role="tabpanel"
+                          aria-labelledby="pills-learningData-tab"
+                          tabindex="0"
+                        >
+                          <h5>[Select Product]</h5>
+                          <h3>[Select Role]</h3>
+                          <ol>
+                            <li>
+                              Team Memeber
+                              <ol>
+                                <li>
+                                  Member 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Member 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Guest
+                              <ol>
+                                <li>
+                                  Guest 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Guest 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Public
+                              <ol>
+                                <li>
+                                  Public 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Public 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </div>
+                        <!-- archived data  -->
+                        <div
+                          class="tab-pane fade"
+                          id="pills-archivedData"
+                          role="tabpanel"
+                          aria-labelledby="pills-archivedData-tab"
+                          tabindex="0"
+                        >
+                          <h5>[Select Product]</h5>
+                          <h3>[Select Role]</h3>
+                          <ol>
+                            <li>
+                              Team Memeber
+                              <ol>
+                                <li>
+                                  Member 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Member 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Guest
+                              <ol>
+                                <li>
+                                  Guest 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Guest 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                            <li>
+                              Public
+                              <ol>
+                                <li>
+                                  Public 1
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Public 2
+                                  <ol>
+                                    <li>
+                                      Portfolio 1 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                    <li>
+                                      Portfolio 2 [View, Add/Edit, Delete,
+                                      Admin]
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Products, Data Types, Rights Assigned container  end-->
+                </div>
+              </div>
+              <!-- members tab  -->
+              <div
+                class="tab-pane fade"
+                id="pills-members"
+                role="tabpanel"
+                aria-labelledby="pills-members-tab"
+                tabindex="0"
+              >
+                <div class="row ms-auto me-auto">
+                  <div class="col-12">
+                    <h3><p>Members of my Organisation</p></h3>
+                  </div>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item col-4" role="presentation">
+                    <button
+                      class="nav-link membersnaves active"
+                      id="pills-teamMember-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-teamMember"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-teamMember"
+                      aria-selected="true"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Team Members</b>
+                    </button>
+                  </li>
+                  <li class="nav-item col-4" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-guest-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-guest"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-guest"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Guest</b>
+                    </button>
+                  </li>
+                  <li class="nav-item col-4" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-public-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-public"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-public"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Public</b>
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- team members tab -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-teamMember"
+                    role="tabpanel"
+                    aria-labelledby="pills-teamMember-tab"
+                    tabindex="0"
+                  >
+                    <div class="row rights-second-row">
+                      <div
+                        class="col-lg-5 p-4 col-md-12 col-sm-12 rights-side-bar"
+                      >
+                        <div class="row">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Member Search"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row teamlist mt-2">
+                          <ol class="list-group teammemeberlist">
+                            <li class="list-group-item border-0">
+                              Team Member 1
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 2
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 3
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 4
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 5
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 6
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Invited"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row teamlist mt-2">
+                          <ol class="list-group teammemeberlist">
+                            <li class="list-group-item border-0">
+                              Team Member 1
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 2
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 3
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 4
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 5
+                            </li>
+                            <li class="list-group-item border-0">
+                              Team Member 6
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12 p-4">
+                        <!-- select team member  -->
+                        <div class="row">
+                          <select
+                            class="form-select org-select-input"
+                            aria-label="products"
+                          >
+                            <option selected>Team Member 1</option>
+                            <option value="1">Team Member 2</option>
+                            <option value="1">Team Member 3</option>
+                            <option value="1">Team Member 4</option>
+                            <option value="1">Team Member 5</option>
+                            <option value="1">Team Member 6</option>
+                          </select>
+                        </div>
+                        <!-- remove team member button  -->
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Remove Team Member</b>
+                          </button>
+                        </div>
+                        <!-- invite new team member  -->
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Enter Email"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Invite New Team Member</b>
+                          </button>
+                        </div>
+                        <!-- show invitation link  -->
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Show Invitation Link"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Copy Invitation Link</b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- guest tab  -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-guest"
+                    role="tabpanel"
+                    aria-labelledby="pills-guest-tab"
+                    tabindex="0"
+                  >
+                    <div class="row rights-second-row">
+                      <div
+                        class="col-lg-5 p-4 col-md-12 col-sm-12 rights-side-bar"
+                      >
+                        <div class="row">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Guest Search"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row teamlist mt-2">
+                          <ol class="list-group teammemeberlist">
+                            <li class="list-group-item border-0">Guest 1</li>
+                            <li class="list-group-item border-0">Guest 2</li>
+                            <li class="list-group-item border-0">Guest 3</li>
+                            <li class="list-group-item border-0">Guest 4</li>
+                            <li class="list-group-item border-0">Guest 5</li>
+                            <li class="list-group-item border-0">Guest 6</li>
+                          </ol>
+                        </div>
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Invited"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row teamlist mt-2">
+                          <ol class="list-group teammemeberlist">
+                            <li class="list-group-item border-0">Guest 1</li>
+                            <li class="list-group-item border-0">Guest 2</li>
+                            <li class="list-group-item border-0">Guest 3</li>
+                            <li class="list-group-item border-0">Guest 4</li>
+                            <li class="list-group-item border-0">Guest 5</li>
+                            <li class="list-group-item border-0">Guest 6</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12 p-4">
+                        <!-- select guest  -->
+                        <div class="row">
+                          <select
+                            class="form-select org-select-input"
+                            aria-label="products"
+                          >
+                            <option selected>Guest 1</option>
+                            <option selected>Guest 2</option>
+                            <option selected>Guest 3</option>
+                            <option selected>Guest 4</option>
+                            <option selected>Guest 5</option>
+                            <option selected>Guest 6</option>
+                          </select>
+                        </div>
+                        <!-- remove guest button  -->
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Remove Guest</b>
+                          </button>
+                        </div>
+                        <!-- invite new guest  -->
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Enter Email"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Invite New Guest</b>
+                          </button>
+                        </div>
+                        <!-- show invitation link  -->
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Show Invitation Link"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Copy Invitation Link</b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- public tab  -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-public"
+                    role="tabpanel"
+                    aria-labelledby="pills-public-tab"
+                    tabindex="0"
+                  >
+                    <div class="row rights-second-row">
+                      <div
+                        class="col-lg-5 p-4 col-md-12 col-sm-12 rights-side-bar"
+                      >
+                        <div class="row">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Public Link used"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row teamlist mt-2">
+                          <ol class="list-group teammemeberlist">
+                            <li class="list-group-item border-0">Link 1</li>
+                            <li class="list-group-item border-0">Link 2</li>
+                            <li class="list-group-item border-0">Link 3</li>
+                            <li class="list-group-item border-0">Link 4</li>
+                            <li class="list-group-item border-0">Link 5</li>
+                            <li class="list-group-item border-0">Link 6</li>
+                            <li class="list-group-item border-0">Link 7</li>
+                            <li class="list-group-item border-0">Link 8</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12 p-4">
+                        <!-- show invitation link  -->
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Show Invitation Link"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row mt-2">
+                          <button type="button" class="btn success-btn">
+                            <b>Copy Invitation Link</b>
+                          </button>
+                        </div>
+                        <!-- public links used  -->
+                        <div class="row mt-2">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Public Link used"
+                            aria-label="default input example"
+                          />
+                        </div>
+                        <div class="row teamlist mt-2 card">
+                          <ol class="list-group teammemeberlist">
+                            <li class="list-group-item border-0">Link 1</li>
+                            <li class="list-group-item border-0">Link 2</li>
+                            <li class="list-group-item border-0">Link 3</li>
+                            <li class="list-group-item border-0">Link 4</li>
+                            <li class="list-group-item border-0">Link 5</li>
+                            <li class="list-group-item border-0">Link 6</li>
+                            <li class="list-group-item border-0">Link 7</li>
+                            <li class="list-group-item border-0">Link 8</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- roles tab  -->
+              <div
+                class="tab-pane fade"
+                id="pills-roles"
+                role="tabpanel"
+                aria-labelledby="pills-roles-tab"
+                tabindex="0"
+              >
+                <div class="row ms-auto me-auto">
+                  <div class="col-12">
+                    <h3><p>Roles in my Organisation</p></h3>
+                  </div>
+                </div>
+                <div class="row rights-second-row">
+                  <div class="col-lg-5 p-4 col-md-12 col-sm-12 rights-side-bar">
+                    <div class="row">
+                      <h5>Select</h5>
+                    </div>
+                    <div class="row">
+                      <!-- level 1  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Level 1</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select</option>
+                        </select>
+                      </div>
+
+                      <!-- level 2  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Level 2</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select</option>
+                        </select>
+                      </div>
+                      <!-- level 3  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Level 3</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select</option>
+                        </select>
+                      </div>
+                      <!-- level 4  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Level 4</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select</option>
+                        </select>
+                      </div>
+                      <!-- level 5  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Level 5</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select</option>
+                        </select>
+                      </div>
+                      <!-- security layers  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Security Layers</b></p>
+                      </div>
+                      <div class="row">
+                        <select
+                          class="form-select org-select-input"
+                          aria-label="products"
+                        >
+                          <option selected>Security Layer 1 (High)</option>
+                          <option value="1">Security Layer 2</option>
+                          <option value="1">Security Layer 3</option>
+                          <option value="1">Security Layer 4</option>
+                          <option value="1">Security Layer 5</option>
+                          <option value="1">Security Layer 6 (Low)</option>
+                        </select>
+                      </div>
+
+                      <!-- role name  -->
+                      <div class="row mt-2">
+                        <p class="mb-0"><b>Role Name</b></p>
+                      </div>
+                      <div class="row">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter name"
+                          aria-label="portfolio name"
+                        />
+                      </div>
+
+                      <!-- cretae portfolio button  -->
+                      <div class="row mt-2">
+                        <button type="button" class="btn success-btn">
+                          <b>Create Role</b>
+                        </button>
+                      </div>
+                      <!-- end button  -->
+                    </div>
+                  </div>
+
+                  <!-- roles created  -->
+                  <div class="col-lg-7 col-md-12 col-sm-12">
+                    <ul
+                      class="nav nav-pills mb-3"
+                      id="pills-tab"
+                      role="tablist"
+                    >
+                      <li class="nav-item col-4" role="presentation">
+                        <button
+                          class="nav-link membersnaves active"
+                          id="pills-layers-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-layers"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-layers"
+                          aria-selected="true"
+                        >
+                          <b><i class="bi bi-person-fill"></i> Layers</b>
+                        </button>
+                      </li>
+                      <li class="nav-item col-4" role="presentation">
+                        <button
+                          class="nav-link membersnaves"
+                          id="pills-levels-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-levels"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-levels"
+                          aria-selected="false"
+                        >
+                          <b><i class="bi bi-person-fill"></i> Levels</b>
+                        </button>
+                      </li>
+                      <li class="nav-item col-4" role="presentation">
+                        <button
+                          class="nav-link membersnaves"
+                          id="pills-names-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-names"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-names"
+                          aria-selected="false"
+                        >
+                          <b><i class="bi bi-person-fill"></i> Names</b>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <!-- layers tab -->
+                      <div
+                        class="tab-pane fade show active p-3"
+                        id="pills-layers"
+                        role="tabpanel"
+                        aria-labelledby="pills-layers-tab"
+                        tabindex="0"
+                      >
+                        <!-- security layer heading  -->
+                        <div class="row">
+                          <h5><b>[Select Security Layer 1/2/3/4/5/6]</b></h5>
+                        </div>
+                        <!-- security layers  -->
+                        <div class="row">
+                          <select
+                            class="form-select org-select-input"
+                            aria-label="products"
+                          >
+                            <option selected>Security Layer 1</option>
+                            <option value="1">Security Layer 2</option>
+                            <option value="1">Security Layer 3</option>
+                            <option value="1">Security Layer 4</option>
+                            <option value="1">Security Layer 5</option>
+                            <option value="1">Security Layer 6</option>
+                          </select>
+                        </div>
+                        <!-- role name heading  -->
+                        <h5 class="mt-4"><b>[Select Role Name]</b></h5>
+                        <!-- select role name  -->
+                        <div class="row mt-2 p-4">
+                          <select
+                            class="form-select org-select-input"
+                            aria-label="products"
+                          >
+                            <option selected>Role Name 1</option>
+                            <option value="1">Role Name 2</option>
+                            <option value="1">Role Name 3</option>
+                            <option value="1">Role Name 4</option>
+                            <option value="1">Role Name 5</option>
+                            <option value="1">Role Name 6</option>
+                          </select>
+                        </div>
+                        <div class="row mt-2 p-4">
+                          <ol class="orglayers">
+                            <li>
+                              Level 1
+                              <ol>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                              </ol>
+                            </li>
+                            <li>
+                              Level 2
+                              <ol>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                              </ol>
+                            </li>
+                            <li>Level 3</li>
+                            <li>Level 4</li>
+                            <li>Level 5</li>
+                            <li>Level 6</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <!-- levels tab  -->
+                      <div
+                        class="tab-pane fade"
+                        id="pills-levels"
+                        role="tabpanel"
+                        aria-labelledby="pills-levels-tab"
+                        tabindex="0"
+                      >
+                        <div class="row">
+                          <h5><b>[Select Organisation Levels 1/2/3/4/5]</b></h5>
+                        </div>
+                        <div class="row mt-2 p-4">
+                          <ol class="orglayers">
+                            <li>
+                              Security Layer 1
+                              <ol>
+                                <li>Device all</li>
+                                <li>OS all</li>
+                              </ol>
+                            </li>
+                            <li>
+                              Security Layer 2
+                              <ol>
+                                <li>Wifi all</li>
+                                <li>Location all</li>
+                              </ol>
+                            </li>
+                            <li>
+                              Security Layer 3
+                              <ol>
+                                <li>IP all</li>
+                                <li>Wifi office</li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <!-- name tab  -->
+                      <div
+                        class="tab-pane fade"
+                        id="pills-names"
+                        role="tabpanel"
+                        aria-labelledby="pills-names-tab"
+                        tabindex="0"
+                      >
+                        <div class="row mt-2">
+                          <h5><p>Select Role Name</p></h5>
+                        </div>
+                        <div class="row mt-2">
+                          <ul class="nameLevel">
+                            <li>Level 1 -</li>
+                            <li>Level 2 -</li>
+                            <li>Level 3 -</li>
+                            <li>Level 4 -</li>
+                            <li>Level 5 -</li>
+                            <li>Security Layer -</li>
+                            <li>[Edit]</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- roles created  end-->
+                </div>
+              </div>
+              <!-- levels tab  -->
+              <div
+                class="tab-pane fade"
+                id="pills-levelsMain"
+                role="tabpanel"
+                aria-labelledby="pills-levelsMain-tab"
+                tabindex="0"
+              >
+                <div class="row ms-auto me-auto">
+                  <div class="col-12">
+                    <h3><p>Levels of my Organisation</p></h3>
+                  </div>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <div class="col-1"></div>
+                  <li class="nav-item col-2" role="presentation">
+                    <button
+                      class="nav-link membersnaves active"
+                      id="pills-level1name-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-level1name"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-level1name"
+                      aria-selected="true"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Level 1 [Name]</b>
+                    </button>
+                  </li>
+                  <li class="nav-item col-2" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-level2name-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-level2name"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-level2name"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Level 1 [Name]</b>
+                    </button>
+                  </li>
+                  <li class="nav-item col-2" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-level3name-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-level3name"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-level3name"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Level 1 [Name]</b>
+                    </button>
+                  </li>
+                  <li class="nav-item col-2" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-level4name-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-level4name"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-level4name"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Level 1 [Name]</b>
+                    </button>
+                  </li>
+                  <li class="nav-item col-2" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-level5name-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-level5name"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-level4name"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Level 1 [Name]</b>
+                    </button>
+                  </li>
+                  <div class="col-1"></div>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- Level 1 tab -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-level1name"
+                    role="tabpanel"
+                    aria-labelledby="pills-level1name-tab"
+                    tabindex="0"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter level name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn success-btn">
+                              <b>Save Level Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Add Item to Level</b>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 middlerow col-sm-12 card p-4 rounded-0"
+                        >
+                          <div class="row">
+                            <h5><p>[Level Name]</p></h5>
+                          </div>
+                          <div class="row">
+                            <ol class="orglayers">
+                              <li>Level 1</li>
+                              <li>Level 2</li>
+                              <li>Level 3</li>
+                              <li>Level 4</li>
+                              <li>Level 5</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <div class="row">
+                            <select
+                              class="form-select org-select-input"
+                              aria-label="products"
+                            >
+                              <option selected>Item 1</option>
+                              <option value="1">Item 2</option>
+                              <option value="1">Item 3</option>
+                            </select>
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Edit Selected Item Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Save after Edit</b>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- level 2 tab  -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-level2name"
+                    role="tabpanel"
+                    aria-labelledby="pills-level2name-tab"
+                    tabindex="0"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter level name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn success-btn">
+                              <b>Save Level Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Add Item to Level</b>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 middlerow col-sm-12 card p-4 rounded-0"
+                        >
+                          <div class="row">
+                            <h5><p>[Level Name]</p></h5>
+                          </div>
+                          <div class="row">
+                            <ol class="orglayers">
+                              <li>Level 1</li>
+                              <li>Level 2</li>
+                              <li>Level 3</li>
+                              <li>Level 4</li>
+                              <li>Level 5</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <div class="row">
+                            <select
+                              class="form-select org-select-input"
+                              aria-label="products"
+                            >
+                              <option selected>Item 1</option>
+                              <option value="1">Item 2</option>
+                              <option value="1">Item 3</option>
+                            </select>
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Edit Selected Item Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Save after Edit</b>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- level 3 tab  -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-level3name"
+                    role="tabpanel"
+                    aria-labelledby="pills-level3name-tab"
+                    tabindex="0"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter level name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn success-btn">
+                              <b>Save Level Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Add Item to Level</b>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 middlerow col-sm-12 card p-4 rounded-0"
+                        >
+                          <div class="row">
+                            <h5><p>[Level Name]</p></h5>
+                          </div>
+                          <div class="row">
+                            <ol class="orglayers">
+                              <li>Level 1</li>
+                              <li>Level 2</li>
+                              <li>Level 3</li>
+                              <li>Level 4</li>
+                              <li>Level 5</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <div class="row">
+                            <select
+                              class="form-select org-select-input"
+                              aria-label="products"
+                            >
+                              <option selected>Item 1</option>
+                              <option value="1">Item 2</option>
+                              <option value="1">Item 3</option>
+                            </select>
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Edit Selected Item Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Save after Edit</b>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- level 4 tab  -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-level4name"
+                    role="tabpanel"
+                    aria-labelledby="pills-level4name-tab"
+                    tabindex="0"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter level name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn success-btn">
+                              <b>Save Level Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Add Item to Level</b>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 middlerow col-sm-12 card p-4 rounded-0"
+                        >
+                          <div class="row">
+                            <h5><p>[Level Name]</p></h5>
+                          </div>
+                          <div class="row">
+                            <ol class="orglayers">
+                              <li>Level 1</li>
+                              <li>Level 2</li>
+                              <li>Level 3</li>
+                              <li>Level 4</li>
+                              <li>Level 5</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <div class="row">
+                            <select
+                              class="form-select org-select-input"
+                              aria-label="products"
+                            >
+                              <option selected>Item 1</option>
+                              <option value="1">Item 2</option>
+                              <option value="1">Item 3</option>
+                            </select>
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Edit Selected Item Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Save after Edit</b>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- level 5 tab  -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-level5name"
+                    role="tabpanel"
+                    aria-labelledby="pills-level5name-tab"
+                    tabindex="0"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter level name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn success-btn">
+                              <b>Save Level Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Add Item to Level</b>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 middlerow col-sm-12 card p-4 rounded-0"
+                        >
+                          <div class="row">
+                            <h5><p>[Level Name]</p></h5>
+                          </div>
+                          <div class="row">
+                            <ol class="orglayers">
+                              <li>Level 1</li>
+                              <li>Level 2</li>
+                              <li>Level 3</li>
+                              <li>Level 4</li>
+                              <li>Level 5</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 card p-4 rounded-0">
+                          <div class="row">
+                            <select
+                              class="form-select org-select-input"
+                              aria-label="products"
+                            >
+                              <option selected>Item 1</option>
+                              <option value="1">Item 2</option>
+                              <option value="1">Item 3</option>
+                            </select>
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Edit Selected Item Name</b>
+                            </button>
+                          </div>
+                          <!-- add iem to level  -->
+                          <!-- invite new team member  -->
+                          <div class="row mt-2">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Item name"
+                              aria-label="default input example"
+                            />
+                          </div>
+                          <div class="row mt-2">
+                            <button type="button" class="btn btn-secondary">
+                              <b>Save after Edit</b>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- layers tab  -->
+              <div
+                class="tab-pane fade"
+                id="pills-layersMain"
+                role="tabpanel"
+                aria-labelledby="pills-layersMain-tab"
+                tabindex="0"
+              >
+                <div class="row ms-auto me-auto">
+                  <div class="col-12">
+                    <h3><p>Security Layers of my Organisation</p></h3>
+                  </div>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item col-6" role="presentation">
+                    <button
+                      class="nav-link membersnaves active"
+                      id="pills-setlayers-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-setlayers"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-setlayers"
+                      aria-selected="true"
+                    >
+                      <b
+                        ><i class="bi bi-person-fill"></i> Set Layers - 1
+                        (High), 2, 3, 4, 5, 6 (Low)</b
+                      >
+                    </button>
+                  </li>
+                  <li class="nav-item col-6" role="presentation">
+                    <button
+                      class="nav-link membersnaves"
+                      id="pills-securityLayers-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-securityLayers"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-securityLayers"
+                      aria-selected="false"
+                    >
+                      <b><i class="bi bi-person-fill"></i> Security Layers</b>
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- setlayers tab -->
+                  <div
+                    class="tab-pane fade show active mh-100"
+                    id="pills-setlayers"
+                    role="tabpanel"
+                    aria-labelledby="pills-setlayers-tab"
+                    tabindex="0"
+                  >
+                    <div class="row card setlayercard p-3">
+                      <ol class="orglayers">
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                              >Devices - Layer
+                              <input type="checkbox" /> 1</label
+                            >
+                          </div>
+                          <ol>
+                            <li>
+                              <input type="checkbox" /> Laptop - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="laptop1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="laptop2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="laptop3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="laptop4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="laptop5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="laptop6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Phone - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="phone1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="phone2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="phone3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="phone4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="phone5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="phone6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Tablet - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="tablet4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="tablet5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="tablet6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Others not listed above
+                              - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                          </ol>
+                        </li>
+
+                        <!-- operating system layers  -->
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                              >Operating System - Layer
+                              <input type="checkbox" /> 1</label
+                            >
+                          </div>
+                          <ol>
+                            <li>
+                              <input type="checkbox" /> Windows - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="laptop1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="laptop2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="laptop3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="laptop4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="laptop5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="laptop6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Mac - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="phone1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="phone2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="phone3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="phone4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="phone5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="phone6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Linux - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="tablet4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="tablet5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="tablet6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Android - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Others not listed above
+                              - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                          </ol>
+                        </li>
+
+                        <!-- browser layer  -->
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                              >Operating System - Layer
+                              <input type="checkbox" /> 1</label
+                            >
+                          </div>
+                          <ol>
+                            <li>
+                              <input type="checkbox" /> Chrome - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="laptop1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="laptop2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="laptop3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="laptop4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="laptop5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="laptop6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Bing - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="phone1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="phone2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="phone3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="phone4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="phone5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="phone6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Others not listed above
+                              - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="tablet4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="tablet5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="tablet6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                          </ol>
+                        </li>
+
+                        <!-- internet connection  -->
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                              >Internet Connection Type - Layer
+                              <input type="checkbox" /> 1</label
+                            >
+                          </div>
+                          <ol>
+                            <li>
+                              <input type="checkbox" /> Mobile Data - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="laptop1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="laptop2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="laptop3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="laptop4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="laptop5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="laptop6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="laptop6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Office Wifi - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="phone1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="phone2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="phone3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone4"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="phone4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="phone5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="phone6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="phone6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Public Wifi - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet"
+                                  value="option4"
+                                />
+                                <label class="form-check-label" for="tablet4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet5"
+                                  value="option5"
+                                />
+                                <label class="form-check-label" for="tablet5"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="device"
+                                  id="tablet6"
+                                  value="option6"
+                                />
+                                <label class="form-check-label" for="tablet6"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <input type="checkbox" /> Others not listed above
+                              - Layer
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet1"
+                                  value="option1"
+                                />
+                                <label class="form-check-label" for="tablet1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet3"
+                                  value="option3"
+                                />
+                                <label class="form-check-label" for="tablet3"
+                                  >5</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="tabletOptions"
+                                  id="tablet2"
+                                  value="option2"
+                                />
+                                <label class="form-check-label" for="tablet2"
+                                  >6</label
+                                >
+                              </div>
+                            </li>
+                          </ol>
+                        </li>
+                        <!-- geographic location  -->
+                        <li>
+                          <input type="checkbox" /> Geographic Location - Layer
+                          <input type="checkbox" /> 1
+                          <ol id="setlocation" class="row orglayers clear "></ol>
+                        </li>
+                      </ol>
+                      <ul id="pagin">
+                        <li>
+                          <a
+                            class="current page_li"
+                            id="first_page_button"
+                            href="#"
+                            >1</a
+                          >
+                        </li>
+                        <li><a class="page_li" href="#">2</a></li>
+                        <li><a class="page_li" href="#">3</a></li>
+                        <li><a class="page_li" href="#">4</a></li>
+                        <li><a class="page_li" href="#">5</a></li>
+                      </ul>
+                    </div>
+                    <br/>
+                  </div>
+                  <!-- securitylayers tab -->
+                  <div
+                    class="tab-pane fade show"
+                    id="pills-securityLayers"
+                    role="tabpanel"
+                    aria-labelledby="pills-securityLayers-tab"
+                    tabindex="0"
+                  >
+                    <div class="row p-3">
+                      <h5><b>[Select Layer 1/2/3/4/5/6]</b></h5>
+                      <ol class="orglayers">
+                        <li>
+                          Devices
+                          <ol>
+                            <li>Laptop</li>
+                            <li>Phone</li>
+                            <li>Tablet</li>
+                            <li>Others notlisted above</li>
+                          </ol>
+                        </li>
+                        <li>
+                          Operating Systems
+                          <ol>
+                            <li>Windows</li>
+                            <li>Mac</li>
+                            <li>Linux</li>
+                            <li>Android</li>
+                            <li>Others notlisted above</li>
+                          </ol>
+                        </li>
+                        <li>
+                          Browser
+                          <ol>
+                            <li>Chrome</li>
+                            <li>Safari</li>
+                            <li>Bing</li>
+                            <li>Others notlisted above</li>
+                          </ol>
+                        </li>
+                        <li>
+                          Internet Connection Type
+                          <ol>
+                            <li>Mobile Data</li>
+                            <li>Office Wifi</li>
+                            <li>Public Wifi</li>
+                            <li>Others notlisted above</li>
+                          </ol>
+                        </li>
+                        <li>
+                          Geographic Location
+                          <ol>
+                            <li>Australia</li>
+                            <li>Bangladesh</li>
+                            <li>Belgium</li>
+                            <li>Bhutan</li>
+                            <li>Brazil</li>
+                            <li>Colombia</li>
+                            <li>Czech Republic</li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tab navs end  -->
+          <div class="row card ms-auto me-auto p-4 container">
+            <p class="bottomText">
+              uxlivinglabsessionid(v002)-start-dowellclock()-systemclock()-serverclock()-userlanguage()-userlogintype()-userlocation()-userIP()-userOS()-userdevice()-userbrowser()-userconnectiontype()-productredirecturl()-logineventID()-UserID()-userprofile(userphoto(),faceID(),voiceID(),fingerprint(),firstname(),lastname(),designation(),teamcode(),email(),country(),location(),phonecode(),phonenumber(),
+              address())-organisationarray(organisation1(ID,orgname,orgowner),org2,org3,…)-selectedproduct(productID(),productlogo(),orgownerID(),organisationID(),orglogo())-userportfolios(1,2,3,…)-selectedPortfolio(ID(),portfolioname(),membertype(),memberlink(),datatype(),operationalrights(),roleID(),rolename())-selectedportfoliolevel1(level1name()-level1ID(),level1itemarray(1,2,3..))-selectedportfoliolevel2(level2name()-level2ID(),level2itemarray(1,2,3..))-selectedportfoliolevel3(level3name()-level3ID(),level3itemarray(1,2,3..))-selectedportfoliolevel4(level4name()-level4ID(),level4itemarray(1,2,3..))-selectedportfoliolevel5(level5name()-level5ID(),level5itemarray(1,2,3..))-selectedsecuritylayer1((s1devicesarray(1,2,3,..)-s1osarray(1,2,3,..)-s1browerarray(1,2,3,..),s1geolocationarray(1,2,3,..),s1IParray(1,2,3,..),s1connectiontype(1,2,3,..))-selectedsecuritylayer2((s2devicesarray(1,2,3,..)-s2osarray(1,2,3,..)-s2browerarray(1,2,3,..),s2geolocationarray(1,2,3,..),s2IParray(1,2,3,..),s2connectiontype(1,2,3,..))-selectedsecuritylayer3((s3devicesarray(1,2,3,..)-s3osarray(1,2,3,..)-s3browerarray(1,2,3,..),s3geolocationarray(1,2,3,..),s3IParray(1,2,3,..),s3connectiontype(1,2,3,..))-selectedsecuritylayer4((s4devicesarray(1,2,3,..)-s4osarray(1,2,3,..)-s4browerarray(1,2,3,..),s4geolocationarray(1,2,3,..),s4IParray(1,2,3,..),s4connectiontype(1,2,3,..))-selectedsecuritylayer5((s5devicesarray(1,2,3,..)-s5osarray(1,2,3,..)-s5browerarray(1,2,3,..),s5geolocationarray(1,2,3,..),s5IParray(1,2,3,..),s5connectiontype(1,2,3,..))-selectedsecuritylayer6((s6devicesarray(1,2,3,..)-s6osarray(1,2,3,..)-s6browerarray(1,2,3,..),s6geolocationarray(1,2,3,..),s6IParray(1,2,3,..),s6connectiontype(1,2,3,..))-end-
+            </p>
+          </div>
+        </div>
+        <!-- right container end  -->
+      </div>
+    </div>
+    <!-- second container end  -->
+
+    <!-- footer  -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 mb-0 text-dark">
+          <hr class="w-25" />
+          <p><b>Share this</b></p>
+          <div class="row">
+            <ul
+              class="nav col-md-12 justify-content-start list-unstyled d-flex"
+            >
+              <li class="ms-3">
+                <a href="#"
+                  ><i class="bi bi-twitter twitter rounded-circle"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a href="#"
+                  ><i class="bi bi-linkedin linked rounded-circle"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a href="#"
+                  ><i class="bi bi-facebook facebook rounded-circle"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <button type="button" class="btn btn-secondary">
+                  <i class="bi bi-share"></i> More
+                </button>
+              </li>
+            </ul>
+          </div>
+          <hr class="w-25" />
+          <p><b>Like this</b></p>
+          <button type="button" class="btn btn-secondary">
+            <i class="bi bi-star"></i> Like
+          </button>
+          <p class="text-muted">One blogger likes this.</p>
+        </div>
+
+        <ul class="nav col-md-6 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Plans & Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Jobs</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- footer end  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      pageSize = 9;
+      var pageCount = $(".line-content").length / pageSize;
+      for (var i = 0; i < pageCount; i++) {
+        $("#pagin").append('<li><a href="#">' + (i + 1) + "</a></li> ");
+      }
+      $("#pagin li").first().find("a").addClass("current");
+      showPage = function (page) {
+        $(".line-content").hide();
+        $(".line-content").each(function (n) {
+          if (n >= pageSize * (page - 1) && n < pageSize * page) $(this).show();
+        });
+      };
+      showPage(1);
+      $("#pagin li a").click(function () {
+        $("#pagin li a").removeClass("current");
+        $(this).addClass("current");
+        showPage(parseInt($(this).text()));
+      });
+</script>
+  </body>
+</html>
